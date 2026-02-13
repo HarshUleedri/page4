@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #e3e3e3;
+  --color-accent: #ffffff;
+  /* --font-base: "Quicksand", sans-serif;
+  --font-accent: "Caveat", sans-serif; */
+  --
+
+  --animate-scroll: scroll 25s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-100%);
+    }
+  }
+}
+
+/* body {
+  @apply font;
+
+} */
+
+button {
+  @apply cursor-pointer;
+}
+.secondary-button {
+  @apply px-4 hover:bg-secondary py-1 text-center font-semibold text-sm rounded-full border cursor-pointer text-primary;
+}
+/* .badge {
+  
+  border: 1px solid;
+border-image: linear-gradient(to right, rgb(0, 0, 0), rgb(230, 230, 230)) 1;
+
+} */
+.gradient-border {
+  padding: 1.5px; /* border thickness */
+  border-radius: 9999px;
+  background: linear-gradient(to right, black, rgb(230, 230, 230));
+  
+}
+
+.badge {
+  border-radius: 9999px;
+  background: white;
+  padding: 6px 28px;
+}
