@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Protfolio from "./components/Portfolio";
 import Services from "./components/Services";
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <AboutMe />
       <Services />
+      <Experience />
       <Protfolio />
       <Testimonial />
     </>

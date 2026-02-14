@@ -23,7 +23,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto h-screen mt-20 cursor-pointer flex">
+    <section className="max-w-7xl mx-auto h-screen mt-20 cursor-pointer flex gap-16">
       <div className="w-2/5  space-y-6">
         <div className="gradient-border w-fit ">
           <div className="badge font-semibold">Service</div>
@@ -31,7 +31,7 @@ const Services = () => {
         <h2 className="text-5xl font-medium">
           A comprehensive look at what we offer and how we deliver{" "}
         </h2>
-        <p className="text-primary/50">
+        <p className="text-primary/50  w-10/12">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
           odio recusandae eius.
         </p>
