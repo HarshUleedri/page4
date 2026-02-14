@@ -89,7 +89,7 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center  w-full gap-20  animate-scroll shrink-0 ">
+        <div className="flex items-center  w-full gap-20 animate-scroll shrink-0 ">
           {logos.map((item, idx) => (
             <div
               className="bg-secondary flex  items-center text-lg font-semibold rounded-full px-12 py-2"
