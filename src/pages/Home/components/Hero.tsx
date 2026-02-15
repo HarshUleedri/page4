@@ -51,15 +51,15 @@ const Hero = () => {
   ];
 
   return (
-    <section className=" w-full">
-      <div className="flex  mb-16">
-        <div className="w-2/3">
-          <div className="text-[12rem] leading-45 flex font-accent mt-52 pl-32 flex-col ">
+    <section className="w-full px-4 lg:px-0 ">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 mb-16">
+        <div className="lg:w-2/3">
+          <div className="text-7xl lg:text-[12rem] leading-18 mt-24 lg:leading-45 flex font-accent lg:mt-52 lg:pl-32 flex-col ">
             <div className="">Product</div>
             <div>Designer</div>
           </div>
         </div>
-        <div className="w-1/3 flex flex-col pb-20 gap-36 pr-32 items-end py-8 ">
+        <div className="lg:w-1/3  flex flex-col lg:pb-20 gap-20 lg:gap-36 lg:pr-32 items-end py-8 ">
           <div className=" h-72 w-56 ">
             <img
               className="size-full rounded-xl "
@@ -76,9 +76,20 @@ const Hero = () => {
         </div>
       </div>
       {/* marquee */}
-      <div className="flex w-full relative overflow-x-hidden ">
-        <div className="w-72 h-full top-0 z-10 left-0 absolute bg-gradient-to-r from-white form-10% lg:from-30% "></div>
-        <div className="flex items-center w-full gap-20 animate-scroll shrink-0  ">
+      <div className="flex  relative overflow-x-hidden ">
+        <div className="w-20 lg:w-72 h-full top-0 z-10 left-0 absolute bg-gradient-to-r from-white form-10% lg:from-30% "></div>
+        <div className="flex items-center w-max  animate-scroll gap-20 pl-20  shrink-0 ">
+          {logos.map((item, idx) => (
+            <div
+              className="bg-secondary flex  items-center text-lg font-semibold rounded-full px-12 py-2 whitespace-nowrap"
+              key={idx}
+            >
+              {item.logo && <span className="size-6 mr-2">{item.logo}</span>}
+              <span>{item.text}</span>{" "}
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center w-max animate-scroll gap-20  pl-20 shrink-0">
           {logos.map((item, idx) => (
             <div
               className="bg-secondary flex  items-center text-lg font-semibold rounded-full px-12 py-2"
@@ -89,19 +100,27 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center  w-full gap-20 animate-scroll shrink-0 ">
-          {logos.map((item, idx) => (
-            <div
-              className="bg-secondary flex  items-center text-lg font-semibold rounded-full px-12 py-2"
-              key={idx}
-            >
-              {item.logo && <span className="size-6 mr-2">{item.logo}</span>}
-              <span>{item.text}</span>{" "}
-            </div>
-          ))}
-        </div>
-        <div className="w-72 h-full top-0 z-10 right-0 absolute bg-gradient-to-l from-white form-10% lg:from-50%"></div>
+        <div className="w-20 lg:w-72  h-full top-0 z-10 right-0 absolute bg-gradient-to-l from-white form-10% lg:from-50%"></div>
       </div>
+      {/* <div className="relative flex overflow-hidden">
+        <div className="absolute left-0 top-0 z-10 h-full w-20 lg:w-72 bg-gradient-to-r from-white from-10% lg:from-30%" />
+
+        <div className="flex w-max animate-scroll gap-8 lg:gap-20">
+          {[...logos, ...logos].map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-secondary flex items-center text-sm lg:text-lg font-semibold rounded-full px-6 lg:px-12 py-2 whitespace-nowrap"
+            >
+              {item.logo && (
+                <span className="size-5 lg:size-6 mr-2">{item.logo}</span>
+              )}
+              <span>{item.text}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="absolute right-0 top-0 z-10 h-full w-20 lg:w-72 bg-gradient-to-l from-white from-10% lg:from-50%" />
+      </div> */}
     </section>
   );
 };

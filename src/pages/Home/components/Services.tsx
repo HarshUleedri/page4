@@ -23,12 +23,12 @@ const Services = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto h-screen mt-20 cursor-pointer flex gap-16">
-      <div className="w-2/5  space-y-6">
+    <section className="max-w-7xl mb-20 lg:mb-0 px-4 lg:px-0 mx-auto lg:h-screen mt-20 cursor-pointer flex flex-col lg:flex-row gap-8 lg:gap-16">
+      <div className="lg:w-2/5  space-y-6">
         <div className="gradient-border w-fit ">
           <div className="badge font-semibold">Service</div>
         </div>
-        <h2 className="text-5xl font-medium">
+        <h2 className="text-3xl lg:text-5xl font-medium">
           A comprehensive look at what we offer and how we deliver{" "}
         </h2>
         <p className="text-primary/50  w-10/12">
@@ -37,8 +37,8 @@ const Services = () => {
         </p>
         <button className="button-primary">Sign up</button>
       </div>
-      <div className="w-3/5 h-full  ">
-        <div className="grid grid-cols-2 gap-8">
+      <div className="lg:w-3/5 h-full   ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
           {services.map((service, idx) => (
             <div
               className="bg-secondary/50 border flex group hover:h-80 self-start h-72 transition-all delay-200 ease-in-out duration-700 hover:bg-primary hover:text-accent justify-between flex-col border-secondary/50 p-6 rounded-md "

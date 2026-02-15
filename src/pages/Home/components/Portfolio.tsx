@@ -39,23 +39,23 @@ const Protfolio = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl ">
+    <section className="mx-auto max-w-7xl px-4 lg:px-0 ">
       <div className="space-y-8">
         <div className="gradient-border w-fit  ">
           <div className="badge font-semibold">PortFolio</div>
         </div>
-        <div className="flex gap-20 mb-16 ">
-          <h2 className="w-3/5 text-5xl pr-12">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-20 mb-8 lg:mb-16 ">
+          <h2 className="lg:w-3/5 font-medium text-3xl lg:text-5xl lg:pr-12">
             Explore my portfolio of creative solutions
           </h2>
-          <div className="w-2/5 flex justify-end  items-end">
+          <div className="lg:w-2/5 lg:flex justify-end  items-end">
             <p className=" w-4/5 text-primary/50 font-medium ">
               Lorem ipsum dolor, consectetur adipisicing elit.
             </p>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-col-1 lg:grid-cols-3 gap-6">
         {protfolio.map((item, idx) => (
           <div
             className="min-h-60 group relative overflow-hidden rounded-xl  "

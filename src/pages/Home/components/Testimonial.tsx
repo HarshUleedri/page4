@@ -17,7 +17,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className=" mt-20 relative bg-secondary pt-36 ">
+    <section className=" mt-20 relative bg-secondary pt-36 px-4 lg:px-0 ">
       <div className="absolute  top-14 z-0 right-1/2 transform translate-x-1/2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -33,10 +33,10 @@ const Testimonial = () => {
         {testimonial.map((test, idx) => (
           <div
             key={idx}
-            className="min-w-full w-full flex items-center flex-col gap-10"
+            className="min-w-full w-full flex items-center flex-col gap-8 lg:gap-10"
           >
             <div>
-              <p className="text-2xl text-center leading-12 font-medium ">
+              <p className="text-lg lg:text-2xl text-center leading-8 lg:leading-12 font-medium ">
                 {test.message}
               </p>
             </div>
